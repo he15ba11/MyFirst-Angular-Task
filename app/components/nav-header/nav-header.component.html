@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm bg-secondary ">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bolder ps-4 pe-4">Heba El-Sayed</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto ">
+        <li class="nav-item ps-4 pe-4">
+          <a class="nav-link" routerLink="/" (click)="allowPath()">Home</a>
+        </li>
+        <li class="nav-item ps-4 pe-4">
+          <a class="nav-link" routerLink="/form" (click)="notAllowPath()">Form</a>
+        </li>
+        <li class="nav-item ps-4 pe-4">
+          <a class="nav-link" routerLink="/slider" (click)="notAllowPath()">Slider</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

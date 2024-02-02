@@ -1,0 +1,23 @@
+<form method="post" class="form-control bg-body-secondary card w-50 container p-5 mb-5 mt-5">
+  <label for="name" class=" form-label">Name</label>
+  <input type="text" name="name" id="name" [(ngModel)]="dataService.formName" required class="p-2 rounded-2 border-0"
+    minlength="3" (input)="validateName()">
+  <span class="spanName invalidName" *ngIf="invalidName">{{ntext}}</span>
+  <br><label for="email" class=" form-label">Email</label>
+  <input type="text" name="email" id="email" [(ngModel)]="dataService.formEmail" required class="p-2 rounded-2 border-0"
+    (input)="validateEmail()">
+  <span class="spanEmail invalidEmail" *ngIf="invalidEmail">{{etext}}</span>
+  <br><label for="mobile" class=" form-label">Mobile</label>
+  <input type="text" name="mobile" id="mobile" [(ngModel)]="dataService.formMobile" required
+    class="p-2 rounded-2 border-0 " (input)="validateMobile()">
+  <span class="spanEmail invalidMobile" *ngIf="invalidMobile"> {{mtext}}</span>
+  <!-- <br><label for="password" class=" form-label">Password</label>
+  <input type="password" name="password" id="password" [(ngModel)]="password" required class="p-2 rounded-2 border-0 "
+    (input)="validatePwd()">
+  <span class="spanEmail invalidPwd" *ngIf="invalidPwd">{{ptext}}</span>-->
+  <input type="button" value="Add" class="btn btn-success w-25 p-2 border-0 m-auto mt-5 text-light rounded-2"
+    (click)="addRow()">
+
+</form>
+<!-- table  -->
+<app-table></app-table>

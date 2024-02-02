@@ -1,0 +1,12 @@
+<input type="text" name="serverName" id="serverName" [(ngModel)]="serverName">
+<button (click)="onCreateServer()" class="btn btn-secondary">Add Server</button>
+<p *ngFor="let server of servers">hello in {{server}} component it`s id {{getServerId()}} and it ia {{serverStatus}}
+  <br>
+  this this returned value {{getServerId()}}
+</p>
+<!-- part 2 -->
+<!-- <button class="btn btn-primary" (click)="showSecret=!showSecret"> Details</button> -->
+<button class="btn btn-primary" (click)="onToggleDetails()"> Details</button>
+<p *ngIf="showSecret">Secret Password = heba</p>
+<div *ngFor="let logItem of log ; let i=index" [ngStyle]="{backgroundColor:i>3? 'purple' :'lightpink'}"
+  [ngClass]="{'color-class':i>3}">{{logItem}}</div>

@@ -1,0 +1,18 @@
+<table class="table table-secondary container text-center table-striped-columns table-bordered mt-5"
+  *ngIf="dataService.showTable">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of dataService.usersData ; let i=index">
+      <td class="table-success text-dark" *ngFor="let d of data ">{{d}}</td>
+      <td *ngIf="dataService.path"><a class="btn btn-primary" (click)="sentDataToForm($event,i)"
+          routerLink="/form">Edit</a></td>
+      <td *ngIf="dataService.path"><button class="btn btn-danger" (click)="deleteField($event,i)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

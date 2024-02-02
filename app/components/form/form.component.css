@@ -1,0 +1,25 @@
+input {
+  position: relative !important;
+}
+
+.invalidName,
+.invalidEmail,
+.invalidPwd,
+.invalidMobile {
+  color: red;
+  position: absolute;
+  top: 20%;
+  right: 16%;
+}
+
+.invalidEmail {
+  top: 41%;
+}
+
+.invalidMobile {
+  top: 62%;
+}
+
+.invalidPwd {
+  top: 69%;
+}

@@ -1,0 +1,15 @@
+<div class="container bg-body-tertiary border-1 border-danger p-2 m-auto text-md-center w-50 mb-3 mt-3">
+  <input type="text" [(ngModel)]="text" class="w-75 rounded-2 border-success p-1"> <button class="btn btn-primary ms-2"
+    (click)="Reset()">Reset</button>
+  <div class=" text-danger">{{text}}</div>
+</div>
+<div class="card container w-50 mb-2">
+  <div class="container" [ngStyle]="{'background-image':getSrcImg()} "></div>
+  <div class="group">
+    <button name="previous" class="btn btn-primary" (click)="previous()">Previous</button>
+    <p>{{i}}</p>
+    <button name="next" class="btn btn-danger" (click)="next()">Next</button>
+    <button name="slideshow" class="btn btn-secondary" (click)="slideShow()">SlideShow</button>
+    <button name="stop" class="btn btn-warning" (click)="stop()">Stop</button>
+  </div>
+</div>

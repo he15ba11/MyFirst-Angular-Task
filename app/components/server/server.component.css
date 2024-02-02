@@ -1,0 +1,9 @@
+p {
+  color: darkgray;
+  background-color: darkcyan;
+  padding: 20px;
+}
+
+.color-class {
+  color: steelblue;
+}

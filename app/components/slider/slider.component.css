@@ -1,0 +1,30 @@
+.card .container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  height: 400px
+}
+
+.group {
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+  gap: 10px;
+}
+
+p {
+  display: inline-block;
+  border: 2px solid brown;
+  text-align: center;
+  padding: 2px 8px;
+  width: 50px;
+  color: darkred;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+[name='stop'],
+[name='slideshow'] {
+  margin-left: 15px;
+}
